@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ksh
 # This file is part of www-log-viewer and is targeting primarly OpenBSD
 # Copyright 5 Mode and other contributors; Licensed MIT
 
@@ -23,7 +23,21 @@ tail -n10 /var/log/nginx/error.log > mynginx_errors.log
 
 # Showing logs..
 if [ "X$param1" != "X-c" ]; then
+  d=`date "+%S"`
   clear; pr -F -l 20 myphp_errors.log mynginx_errors.log 
+  while true; do
+    if [ "X$d" = "X58" ]; then
+			# Create scripts 'extras'..
+			tail -n10 /var/log/php_errors.log > myphp_errors.log
+			tail -n10 /var/log/nginx/error.log > mynginx_errors.log
+
+      clear; pr -F -l 20 myphp_errors.log mynginx_errors.log 
+    fi
+    if [ "X$input" = "Xq" ]; then
+      break
+    fi    
+    d=`date "+%S"`
+  done
 fi
 
 exit 0
