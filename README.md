@@ -7,6 +7,8 @@ www-log-viwer -c
 Acceptable frontend calls:
 <br>
 http://mylogviewer.puppy/web.php  
+Crontab example (crontab -e):  
+0-59    * * * *       /pathto/www-log-viewer -c  
 <br>
 Hope you can find it somewhat useful. Have fun!  
 <br>
