@@ -2,7 +2,7 @@
 A log viewer (script and web frontend) - MIT
 <br><br>
 Script call for logs creation only:  
-www-log-viwer -c  
+www-log-viewer -c  
 <br>
 Acceptable frontend calls:
 <br>
