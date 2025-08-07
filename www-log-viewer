@@ -1,0 +1,29 @@
+#!/bin/sh
+# This file is part of www-log-viewer and is targeting primarly OpenBSD
+# Copyright 5 Mode and other contributors; Licensed MIT
+
+param1=$1
+
+if [ "X$param1" != "X" ]; then
+  # 'Create only file' param..
+	if [ "X$param1" != "X-c" ]; then
+    echo "Invalid param1 value."
+    exit 1  	
+	fi
+fi
+
+if [ "X$param1" != "X-c" ]; then
+  echo "This file is part of www-log-viewer and is targeting primarly OpenBSD"
+  echo "Copyright © 5 Mode and other contributors; Licensed MIT"
+fi
+
+# Create scripts 'extras'..
+tail -n10 /var/log/php_errors.log > myphp_errors.log
+tail -n10 /var/log/nginx/error.log > mynginx_errors.log
+
+# Showing logs..
+if [ "X$param1" != "X-c" ]; then
+  clear; pr -F -l 20 myphp_errors.log mynginx_errors.log 
+fi
+
+exit 0
