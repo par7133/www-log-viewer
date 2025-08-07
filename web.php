@@ -30,6 +30,8 @@
 				 }
 			</style>
 			
+      <meta http-equiv="refresh" content="60;url=/web.php"> 
+
 		</head>
 		<body>
 	<?PHP
