@@ -12,12 +12,12 @@
 
       <meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8"/>
 
-			<title>www-log-viwer</title> 
+			<title>www-log-viewer</title> 
 
 			<link rel="shortcut icon" href="/favicon.ico" />
 				  
-			<meta name="description" content="www-log-viwer"/>
-			<meta name="keywords" content="5 Mode,log,viewr"/>
+			<meta name="description" content="www-log-viewer"/>
+			<meta name="keywords" content="5 Mode,log,viewer"/>
 			<meta name="robots" content="noindex"/>
 			<meta name="author" content="5 Mode and contributors."/>
 			
