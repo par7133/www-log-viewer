@@ -12,6 +12,15 @@ if [ "X$param1" != "X" ]; then
 	fi
 fi
 
+if [ ! -e /var/log/php_errors.log ];  then
+  echo "/var/log/php_errors.log doesn't exists."
+  exit 1
+fi
+if [ ! -e /var/log/nginx/error.log ];  then
+  echo "/var/log/nginx/error.log doesn't exists."
+  exit 1
+fi
+
 if [ "X$param1" != "X-c" ]; then
   echo "This file is part of www-log-viewer and is targeting primarly OpenBSD"
   echo "Copyright © 5 Mode and other contributors; Licensed MIT"
