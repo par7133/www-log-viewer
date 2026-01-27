@@ -1,6 +1,6 @@
 #!/bin/ksh
 # This file is part of www-log-viewer and is targeting primarly OpenBSD
-# Copyright 5 Mode and other contributors; Licensed MIT
+# Copyright NuMode and other contributors; Licensed MIT
 
 param1=$1
 
@@ -23,7 +23,7 @@ fi
 
 if [ "X$param1" != "X-c" ]; then
   echo "This file is part of www-log-viewer and is targeting primarly OpenBSD"
-  echo "Copyright © 5 Mode and other contributors; Licensed MIT"
+  echo "Copyright © NuMode and other contributors; Licensed MIT"
 fi
 
 # Create scripts 'extras'..
