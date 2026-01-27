@@ -17,9 +17,9 @@
 			<link rel="shortcut icon" href="/favicon.ico" />
 				  
 			<meta name="description" content="www-log-viewer"/>
-			<meta name="keywords" content="5 Mode,log,viewer"/>
+			<meta name="keywords" content="NuMode,log,viewer"/>
 			<meta name="robots" content="noindex"/>
-			<meta name="author" content="5 Mode and contributors."/>
+			<meta name="author" content="NuMode"/>
 			
 			<style>
 				 body {
